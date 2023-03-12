@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Zacha&#39;s Story</title>
+        <link>https://zsbyqx20.github.io/</link>
+        <description>Recent content on Zacha&#39;s Story</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://zsbyqx20.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://zsbyqx20.github.io/page/about/</link>
+        <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://zsbyqx20.github.io/page/about/</guid>
+        <description>&lt;img src="https://zsbyqx20.github.io/page/about/yiran-ding-8UVN7ViNuV8-unsplash.jpg" alt="Featured image of post About" /&gt;&lt;blockquote&gt;
+&lt;p&gt;Github: &lt;a class=&#34;link&#34; href=&#34;https://github.com/Zsbyqx20&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Zsbyqx20&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Email: &lt;a class=&#34;link&#34; href=&#34;mailto:zacharyvixx@hotmail.com&#34; &gt;zacharyvixx@hotmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在一个不知名的夜晚，终于开始着手准备这个主页；本来没有特别的想法来写这个 &lt;code&gt;about&lt;/code&gt; ，但是竟也巧合遇到了点曲折，于是还是想来记录一下。&lt;/p&gt;
+&lt;p&gt;前日完成了在 Windows 系统上的工作，本来想转到 Linux 这边做一些文献整理和搭建网站内容的事情，重启之后但很神奇就进不了正常的 grub 界面了，再打开 Windows 后发现它自动给我装了一个不知名的更新 😶‍🌫️（从此再也不敢随便更新&lt;/p&gt;
+&lt;p&gt;于是和这个问题磕了很久。感觉国内的 Fedora 用户群体仍然是少数，大部分都是 Ubuntu 的资料；在 grub 启动的实现上 Fedora 和 Ubuntu 其实还是有区别的，所以并不能直接去用现成的答案，于是转而去科技服务队的群里求助，得到了一个 grub wiki 的网站 😅 那我还不如重装了哈哈哈&lt;/p&gt;
+&lt;p&gt;最后今天晚上终于用 live system 的方式给原先的系统重装了 grub，才终于能继续使用双系统，然后继续写这个主页博客；谨以此纪念我对操作系统的认识更深一层 🧐&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;whatever，欢迎到访这里。&lt;/p&gt;
+&lt;p&gt;这里是 Zacha 的故事集，也是姑苏的白衣小卿。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;江南随处松竹老，何时再遇烂柯人。&lt;/p&gt;
+&lt;p&gt;宫墙满园皆春色，梅落十三此一枝。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，很高兴遇到你。💕&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Zacha&#39;s Story Begins</title>
+        <link>https://zsbyqx20.github.io/post/zachas-story-begins/</link>
+        <pubDate>Mon, 06 Mar 2023 00:24:45 +0800</pubDate>
+        
+        <guid>https://zsbyqx20.github.io/post/zachas-story-begins/</guid>
+        <description>&lt;img src="https://zsbyqx20.github.io/post/zachas-story-begins/rodion-kutsaiev-PIO6J7RovN8-unsplash.jpg" alt="Featured image of post Zacha&#39;s Story Begins" /&gt;</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://zsbyqx20.github.io/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://zsbyqx20.github.io/page/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://zsbyqx20.github.io/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://zsbyqx20.github.io/page/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
