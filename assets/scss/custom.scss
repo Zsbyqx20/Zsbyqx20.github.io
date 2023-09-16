@@ -3,5 +3,26 @@
 */
 
 :root {
-    --base-font-family: "Poppins", var(--sys-font-family), var(--zh-font-family), sans-serif
+    --base-font-family: "Nunito", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --code-font-family: Menlo, Monaco, "JetBrains Mono", "Courier New", var(--zh-font-family), monospace
+}
+
+b, strong{
+    font-weight: 800;
+}
+
+.article-title a{
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+div.footnotes {
+    font-size: small;
+    color: darkgrey;
+    font-family: var(--code-font-family) !important;
+}
+
+a.footnote-ref{
+    font-style: normal;
+    font-family: var(--code-font-family) !important;
 }
