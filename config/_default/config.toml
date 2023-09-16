@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://Zsbyqx20.github.io"
+baseurl = "https://zsbyqx20.github.io"
 languageCode = "en-us"
 paginate = 5
 title = "Zacha's Story Soup"
