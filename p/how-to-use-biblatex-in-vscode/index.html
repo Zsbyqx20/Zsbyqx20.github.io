@@ -1,0 +1,237 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="One Possible Elegant way to use Biber in LaTeX."><title>How to Use Biblatex in VScode?</title><link rel=canonical href=https://zsbyqx20.github.io/p/how-to-use-biblatex-in-vscode/><link rel=stylesheet href=/scss/style.min.d7b32c54b82787d6173ba17293bb6684d06f28248c033627ecc437028b274221.css><meta property="og:title" content="How to Use Biblatex in VScode?"><meta property="og:description" content="One Possible Elegant way to use Biber in LaTeX."><meta property="og:url" content="https://zsbyqx20.github.io/p/how-to-use-biblatex-in-vscode/"><meta property="og:site_name" content="Zacha's Story Soup"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="latex"><meta property="article:tag" content="vscode"><meta property="article:tag" content="windows"><meta property="article:published_time" content="2023-09-17T00:00:00+00:00"><meta property="article:modified_time" content="2023-09-17T00:00:00+00:00"><meta property="og:image" content="https://zsbyqx20.github.io/p/how-to-use-biblatex-in-vscode/omid-armin-lX7_ZYZDVnc-unsplash.jpg"><meta name=twitter:title content="How to Use Biblatex in VScode?"><meta name=twitter:description content="One Possible Elegant way to use Biber in LaTeX."><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://zsbyqx20.github.io/p/how-to-use-biblatex-in-vscode/omid-armin-lX7_ZYZDVnc-unsplash.jpg"><link rel="shortcut icon" href=/story.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hue70c1b5a356ca0515a7992aa9346b1e2_116508_300x0_resize_q75_box.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>🍹</span></figure><div class=site-meta><h1 class=site-name><a href=/>Zacha's Story Soup</a></h1><h2 class=site-description>行云逝水/纵吴歌。</h2></div></header><ol class=social-menu><li><a href=https://space.bilibili.com/669357833 target=_blank title=Bilibili rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-bilibili" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 014-4h10a4 4 0 014 4v6a4 4 0 01-4 4H7a4 4 0 01-4-4v-6z"/><path d="M8 3l2 3"/><path d="M16 3l-2 3"/><path d="M9 13v-2"/><path d="M15 11v2"/></svg></a></li><li><a href=https://github.com/Zsbyqx20 target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>Home</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/about/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help-hexagon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.875 6.27c.7.398 1.13 1.143 1.125 1.948v7.284c0 .809-.443 1.555-1.158 1.948l-6.75 4.27a2.269 2.269.0 01-2.184.0l-6.75-4.27A2.225 2.225.0 013 15.502V8.217c0-.809.443-1.554 1.158-1.947l6.75-3.98a2.33 2.33.0 012.25.0l6.75 3.98h-.033z"/><path d="M12 16v.01"/><path d="M12 13a2 2 0 00.914-3.782 1.98 1.98.0 00-2.414.483"/></svg><span>About</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>Dark Mode</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#background>Background</a><ol><li><a href=#how-does-biber-work>How does Biber work?</a></li><li><a href=#how-to-prepare-for-a-bib-file>How to prepare for a <code>.bib</code> file?</a></li></ol></li><li><a href=#usage>Usage</a><ol><li><a href=#method-01compilation-chain>Method 01：Compilation Chain</a></li><li><a href=#method-02compilation-once>Method 02：Compilation Once</a></li></ol></li><li><a href=#example>Example</a></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/p/how-to-use-biblatex-in-vscode/><img src=/p/how-to-use-biblatex-in-vscode/omid-armin-lX7_ZYZDVnc-unsplash_hu3d03a01dcc18bc5be0e67db3d8d209a6_3624524_800x0_resize_q75_box.jpg srcset="/p/how-to-use-biblatex-in-vscode/omid-armin-lX7_ZYZDVnc-unsplash_hu3d03a01dcc18bc5be0e67db3d8d209a6_3624524_800x0_resize_q75_box.jpg 800w, /p/how-to-use-biblatex-in-vscode/omid-armin-lX7_ZYZDVnc-unsplash_hu3d03a01dcc18bc5be0e67db3d8d209a6_3624524_1600x0_resize_q75_box.jpg 1600w" width=800 height=432 loading=lazy alt="Featured image of post How to Use Biblatex in VScode?"></a></div><div class=article-details><header class=article-category><a href=/categories/records/ style=background-color:#2a9d8f;color:#fff>Records</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/how-to-use-biblatex-in-vscode/>How to Use Biblatex in VScode?</a></h2><h3 class=article-subtitle>One Possible Elegant way to use Biber in LaTeX.</h3></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Sep 17, 2023</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>5 minute read</time></div></footer></div></header><section class=article-content><blockquote><p>Biber is a bibliography information processing program that works in conjunction with the LaTeX package BibLaTeX and offers full Unicode support.<cite><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></cite></p></blockquote><blockquote><p>本文使用 Windows，以及 <a class=link href=https://github.com/James-Yu/LaTeX-Workshop target=_blank rel=noopener>LaTeX-Workshop</a> 扩展。</p></blockquote><h2 id=background>Background</h2><p>我们在使用 LaTeX 编辑带有参考文献的文档时，通常会用到 bib 的相关功能；LaTeX 中最为基础的参考文献管理工具 (Reference Management Software) 是诞生于 1985 年的 <a class=link href=https://www.wikiwand.com/en/BibTeX target=_blank rel=noopener>BibTeX</a>；在它诞生后，也有很多重制版本发布，诸如 <strong>CL-BibTeX</strong>，<strong>MLBibTeX</strong> 等等；而目前较为常用的 Biber 也在其列。和 BibTeX 相比，Biber 提供了非常多的<strong>新增功能</strong>，并能够对 Unicode 进行<strong>完全支持</strong>。</p><h3 id=how-does-biber-work>How does Biber work?</h3><p>在使用 Biber 时，我们通常会看到诸如 <code>.aux</code> 文件、<code>.bst</code> 文件、<code>.bib</code> 文件等等，下面简单介绍一下这些文件是怎么来的，以及 Biber 如何利用这些文件进行工作。</p><ul><li><code>.aux</code> 文件：由 LaTeX 在（第一次）编译中自动生成；</li><li><code>.bst</code> 文件：style 文件 (<mark>可选</mark>)，指定某种形式的参考文献排版方式 (例如一些期刊在投稿时的排版风格要求)</li><li><code>.bib</code> 文件：<mark>用户自己提供</mark>，作为所有参考文献的数据库。</li></ul><p>在运行时，Biber 会从 <code>.aux</code> 文件中得知用户希望引用的文献 entry(文档中用 <code>\cite</code> 命令标出的部分)，随后到 <code>.bib</code> 文件中找到这些 entries。同时，<code>.bst</code> 文件中定义的样式也会被一同编入一个新的 <code>.bbl</code> 文件，最后由 LaTeX 编译进整个文档。</p><h3 id=how-to-prepare-for-a-bib-file>How to prepare for a <code>.bib</code> file?</h3><p>一般情况下，在诸如 Google Scholar 等网站上搜集论文的时候，在条目下方会有一个双引号图表的 &ldquo;cite&rdquo; 按钮，点击它就可以直接获取当前文献的 entry；</p><p><img src=/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917112839.png width=1708 height=851 srcset="/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917112839_huc6b2cc3b716cf89c7cf4b5023e34f34f_278264_480x0_resize_box_3.png 480w, /p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917112839_huc6b2cc3b716cf89c7cf4b5023e34f34f_278264_1024x0_resize_box_3.png 1024w" loading=lazy alt="Google Scholar Screenshot" class=gallery-image data-flex-grow=200 data-flex-basis=481px></p><p>这里用今年比较热点关注的大语言模型 LLaMA 为例，在按照上述方法操作后，得到了相应格式的文件内容如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bibtex data-lang=bibtex><span class=line><span class=cl><span class=nc>@misc</span><span class=p>{</span><span class=nl>touvron2023llama</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>title</span><span class=p>=</span><span class=s>{LLaMA: Open and Efficient Foundation Language Models}</span><span class=p>,</span> 
+</span></span><span class=line><span class=cl>      <span class=na>author</span><span class=p>=</span><span class=s>{Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie-Anne Lachaux and Timothée Lacroix and Baptiste Rozière and Naman Goyal and Eric Hambro and Faisal Azhar and Aurelien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>year</span><span class=p>=</span><span class=s>{2023}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>eprint</span><span class=p>=</span><span class=s>{2302.13971}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>archivePrefix</span><span class=p>=</span><span class=s>{arXiv}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=na>primaryClass</span><span class=p>=</span><span class=s>{cs.CL}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>不同 entry 的种类 (又称 entry types，例子中为 <code>misc</code>) 和关键字的种类 (又称 field types，例子中如 <code>title</code>、<code>author</code> 等等) 各有不同，比较复杂，倒也不必过多关注；如果有兴趣了解，可以移步 <a class=link href=https://www.wikiwand.com/en/BibTeX#Entry_types target=_blank rel=noopener>entry types</a> 和 <a class=link href=https://www.wikiwand.com/en/BibTeX#Field_types target=_blank rel=noopener>field types</a> 自行学习。</p><p>在按照上述办法获得想要的 bib 格式后，新建一个 <code>.bib</code> 文件，将这些条目依次粘贴进文件中就可以了。</p><h2 id=usage>Usage</h2><p>说了很多 (略带扩展性的) 东西，下面我们来聊一聊如何用 VScode 优雅地使用 Biber 编译文档。介于这篇文档写于笔者暂时没用过 Mac 的时期，以下的一些方案<strong>可能</strong>只适用于 Windows，如果您在使用 Mac，可以根据下面的配置方法自行研究，或者笔者买完 Mac 后会更新可能存在的区别之处。</p><p>首先，Biber 默认和 TeXLive 一同安装。在终端中输入 <code>biber -v</code>，如果正确安装，应当可以看到如下内容：<code>biber version: 2.19</code> (或者其他版本号)。</p><p>打开 VScode 的 <code>settings.json</code> 文件，我们需要编辑的设置包括 <code>latex-workshop.latex.tools</code> 和 <code>latex-workshop.latex.recipes</code>。这两个设置项的具体含义可以参考扩展的官方文档，笔者的理解是，<code>tools</code> 设置是为一些必要的命令行选项起别名，<code>recipe</code> 设置是将 <code>tools</code> 通过别名方便地排列或者组合。</p><h3 id=method-01compilation-chain>Method 01：Compilation Chain</h3><p>一般情况下，最为常用的编译方式为 <code>XeLaTeX</code> 和 <code>pdfLaTeX</code>，分别对应中文文档和英文文档的情形。在 <code>tools</code> 设置中，必要的配置如下所示：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=s2>&#34;latex-workshop.latex.tools&#34;</span><span class=err>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;xelatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;command&#34;</span><span class=p>:</span> <span class=s2>&#34;xelatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;args&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-synctex=1&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-interaction=nonstopmode&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-file-line-error&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;%DOCFILE%&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;pdflatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;command&#34;</span><span class=p>:</span> <span class=s2>&#34;pdflatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;args&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-synctex=1&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-interaction=nonstopmode&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;-file-line-error&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;%DOCFILE%&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;biber&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;command&#34;</span><span class=p>:</span> <span class=s2>&#34;biber&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;args&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;%DOCFILE&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><p>如果想弄明白为啥这些参数是这样指定的，以及 <code>%DOCFILE%</code> 到底指什么，还是建议去读扩展的官方文档；为了侧重实用性和简洁性，这里不多赘述。</p><p>在 <code>recipes</code> 的配置如下所示：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=s2>&#34;latex-workshop.latex.recipes&#34;</span><span class=err>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;xelatex -&gt; biber -&gt; xelatex*2&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;tools&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;xelatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;biber&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;xelatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;xelatex&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><p>和只使用 <code>XeLaTeX</code> 和 <code>pdfLaTeX</code> 进行编译的方式有所区别，如果使用了 Biber，需要经过 <code>latex -> biber -> latex -> latex</code> 的编译链，才能得到全部编译完成的 PDF。多次编译的主要原因是保证交叉引用的正确性；具体原因参见 <a class=link href=https://ask.latexstudio.net/ask/article/93.html target=_blank rel=noopener>LaTeX 问答</a>，写的比较详细了。</p><h3 id=method-02compilation-once>Method 02：Compilation Once</h3><p>通过编译链多次编译，可以对 Biber 的行为进行详细控制；不过编译链涉及到对编译器的很多次调用，对于一些较长的文档来说，编译速度可能非常迟缓：十几页的文档可能需要 20 秒到半分钟的编译时长。这时就可以考虑使用 LaTeXmk 工具；<a class=link href=https://mg.readthedocs.io/latexmk.html target=_blank rel=noopener>这份文档</a>比较简要清楚，需要详细文档可以查看<a class=link href=https://ctan.org/pkg/latexmk target=_blank rel=noopener>官方文档</a>。它的优点在于<mark>全自动化<mark>和<mark>增量编译<mark>——如果你只是简单修改了文档或者完全没有修改文档，那么使用 LaTeXmk 工具进行编译将会节省你非常多的时间。</p><p>接下来分享一下 LaTeXmk 在 VScode 上的配置方法；这里引用了<a class=link href=https://liam.page/2020/04/24/using-LaTeXmk-with-LaTeXworkshop-with-VSCode/ target=_blank rel=noopener>这篇文章</a>。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=s2>&#34;latex-workshop.latex.tools&#34;</span><span class=err>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;XeLaTeXmk&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;command&#34;</span><span class=p>:</span> <span class=s2>&#34;latexmk&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;args&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;-xelatex&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;-synctex=1&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;-shell-escape&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;-interaction=nonstopmode&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;-file-line-error&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>        <span class=s2>&#34;%DOC%&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><p>以及 <code>recipes</code> 的配置：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-json data-lang=json><span class=line><span class=cl><span class=s2>&#34;latex-workshop.latex.recipes&#34;</span><span class=err>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>  <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;name&#34;</span><span class=p>:</span> <span class=s2>&#34;latexmk-xe&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nt>&#34;tools&#34;</span><span class=p>:</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>       <span class=s2>&#34;XeLaTeXmk&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=p>]</span>
+</span></span><span class=line><span class=cl>  <span class=p>},</span>
+</span></span><span class=line><span class=cl><span class=p>]</span>
+</span></span></code></pre></td></tr></table></div></div><p>完成这些步骤之后，就可以在 VScode 中用 Biber 在文档中插入参考文献了！</p><h2 id=example>Example</h2><p>配置完编译方式，回到 <code>tex</code> 文档本身的问题上来。使用 Biber 需要导入 <code>biblatex</code> 包；同时推荐导入 <code>hyperref</code>，方便实现引用正反向跳转、链接上色等进阶功能。</p><p>基本代码如下：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-latex data-lang=latex><span class=line><span class=cl><span class=k>\documentclass</span><span class=na>[a4paper]</span><span class=nb>{</span>article<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\usepackage</span><span class=na>[margin=25mm]</span><span class=nb>{</span>geometry<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\usepackage</span><span class=nb>{</span>newtxtext,newtxmath<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\usepackage</span><span class=na>[style=numeric,backref=true,doi=false,isbn=false,url=false,eprint=false,sorting=ynt]</span><span class=nb>{</span>biblatex<span class=nb>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>\title</span><span class=nb>{</span>VScode Example for Bib<span class=k>\LaTeX</span><span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\author</span><span class=nb>{</span>Zacha VIXX<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\addbibresource</span><span class=nb>{</span>exp.bib<span class=nb>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>\begin</span><span class=nb>{</span>document<span class=nb>}</span>
+</span></span><span class=line><span class=cl><span class=k>\maketitle</span>
+</span></span><span class=line><span class=cl>Currently, large language models (such as ChatGPT~<span class=k>\cite</span><span class=nb>{</span>chatgpt<span class=nb>}</span>)
+</span></span><span class=line><span class=cl>are attracting increasingly attention for both developers and researchers.
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>\printbibliography</span><span class=nb>{}</span>
+</span></span><span class=line><span class=cl><span class=k>\end</span><span class=nb>{</span>document<span class=nb>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>其中，<code>exp.bib</code> 是包含了若干文献 entries 的文件，如下所示：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bib data-lang=bib><span class=line><span class=cl><span class=nc>@misc</span><span class=p>{</span><span class=nl>vicuna2023</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>title</span> <span class=p>=</span> <span class=s>{Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90\%* ChatGPT Quality}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>url</span> <span class=p>=</span> <span class=s>{https://lmsys.org/blog/2023-03-30-vicuna/}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>author</span> <span class=p>=</span> <span class=s>{Chiang, Wei-Lin and Li, Zhuohan and Lin, Zi and Sheng, Ying and Wu, Zhanghao and Zhang, Hao and Zheng, Lianmin and Zhuang, Siyuan and Zhuang, Yonghao and Gonzalez, Joseph E. and Stoica, Ion and Xing, Eric P.}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>month</span> <span class=p>=</span> <span class=s>{3}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=na>year</span> <span class=p>=</span> <span class=s>{2023}</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl><span class=nc>@misc</span><span class=p>{</span><span class=nl>chatgpt</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>author</span> <span class=p>=</span> <span class=s>{{OpenAI}}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>title</span> <span class=p>=</span> <span class=s>{{ChatGPT}}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>howpublished</span> <span class=p>=</span> <span class=s>{[Online]}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>year</span> <span class=p>=</span> <span class=s>{2022}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>note</span> <span class=p>=</span> <span class=s>{Available at: \url{https://openai.com/blog/chatgpt/}}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=na>urldate</span> <span class=p>=</span> <span class=s>{2022-11-30}</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>这里其实关注到的是 <code>biblatex</code> 在导入包的过程中指定了很多选项；</p><ul><li><code>style=numeric</code> 是默认选项，也即将参考文献按某种顺序 (<code>sorting</code> 选项的作用) 排序，然后用数字来标号；除此以外也有使用 <code>alphabetic</code> 字母+数字的，不过不是很常见。</li><li><code>backref=true</code> 选项说明我需要在文末参考文献上附上<strong>反向链接</strong>定位到引用处；</li><li>其他若干 <code>false</code> 选项说明不要在参考文献中保留这些信息，使用时可自行决定。</li></ul><p>最终得到的编译结果大致如下所示：</p><p><img src=/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917230109.png width=1475 height=643 srcset="/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917230109_hu016e0a2943fd69303db05dd264716b51_75844_480x0_resize_box_3.png 480w, /p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917230109_hu016e0a2943fd69303db05dd264716b51_75844_1024x0_resize_box_3.png 1024w" loading=lazy alt="First Edition" class=gallery-image data-flex-grow=229 data-flex-basis=550px></p><p>这时候，不论是正向链接还是反向链接都是<strong>可以点击的</strong>；那我们如何给这些链接加上颜色呢？这就需要使用 <code>hyperref</code> 包；在导言区加入 <code>\usepackage{hyperref}</code> 和 <code>\usepackage{xcolor}</code> (一个颜色 package)；随后通过 <code>hypersetup</code> 命令设置颜色。(可能因为在 THU 呆久了的缘故，我特别喜欢用 violet 😴) 至于各个选项究竟特指什么链接，可以自行调查 👀</p><p>此外，你可能注意到了反向定位中 <code>(cit. on p. 1).</code> 这个默认样式，如果你想更改也是没有问题的，这里引用了 Stack Overflow 上的<a class=link href=https://tex.stackexchange.com/a/36308 target=_blank rel=noopener>这篇回答</a>。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-latex data-lang=latex><span class=line><span class=cl><span class=k>\hypersetup</span><span class=nb>{</span>
+</span></span><span class=line><span class=cl>    colorlinks=true,
+</span></span><span class=line><span class=cl>    linkcolor=violet,
+</span></span><span class=line><span class=cl>    filecolor=violet,      
+</span></span><span class=line><span class=cl>    urlcolor=violet,
+</span></span><span class=line><span class=cl>    citecolor=violet,
+</span></span><span class=line><span class=cl><span class=nb>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>\DefineBibliographyStrings</span><span class=nb>{</span>english<span class=nb>}{</span>
+</span></span><span class=line><span class=cl>  backrefpage = <span class=nb>{</span>page<span class=nb>}</span>,
+</span></span><span class=line><span class=cl>  backrefpages = <span class=nb>{</span>pages<span class=nb>}</span>,
+</span></span><span class=line><span class=cl><span class=nb>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>看看最后的效果👏</p><p><img src=/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917231025.png width=1475 height=643 srcset="/p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917231025_hu016e0a2943fd69303db05dd264716b51_78385_480x0_resize_box_3.png 480w, /p/how-to-use-biblatex-in-vscode/Pasted%20image%2020230917231025_hu016e0a2943fd69303db05dd264716b51_78385_1024x0_resize_box_3.png 1024w" loading=lazy alt="Final Edition" class=gallery-image data-flex-grow=229 data-flex-basis=550px></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>from Wikipedia: <a class=link href=https://www.wikiwand.com/en/Biber_%28LaTeX%29 target=_blank rel=noopener>Biber (LaTeX)</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></section><footer class=article-footer><section class=article-tags><a href=/tags/latex/>latex</a>
+<a href=/tags/vscode/>vscode</a>
+<a href=/tags/windows/>windows</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>Licensed under CC BY-NC-SA 4.0</span></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>Related content</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/p/hello-world/><div class=article-image><img src=/p/hello-world/cover.c514d916917173a48a42e0114b469961_hud7e36f7e20e71be184458283bdae4646_55974_250x150_fill_q75_box_smart1.jpg width=250 height=150 loading=lazy alt="Featured image of post Hello World" data-key=hello-world data-hash="md5-xRTZFpFxc6SKQuARS0aZYQ=="></div><div class=article-details><h2 class=article-title>Hello World</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2023 Zacha's Story Soup</section><section class=powerby>👋Welcome to Zacha's Story Soup😴<br>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.20.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
