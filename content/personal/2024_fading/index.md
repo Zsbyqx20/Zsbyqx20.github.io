@@ -8,6 +8,8 @@ showtoc = true
 weight = 50
 isCJKLanguage = true
 searchHidden = true
+robotsNoIndex = true
+hiddenInHomelist = true
 license = "CC BY-NC-ND 4.0"
 +++
 
