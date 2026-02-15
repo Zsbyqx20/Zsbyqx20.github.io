@@ -2,7 +2,7 @@
 title = "Guohong Liu"
 +++
 
-> Download my resume as PDF: [link](https://cloud.tsinghua.edu.cn/f/934d62d5898343b49520/).
+> Download my resume as PDF: [link](/lgh-resume.pdf).
 
 ## Education
 - Institute for AI Industry Research, Tsinghua University (Beijing, China)
