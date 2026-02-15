@@ -1,0 +1,48 @@
+baseURL = "https://zsbyqx20.github.io/"
+languageCode = "en-us"
+title = "Zacharite"
+theme = "zacharite"
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 6
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  author = "Zacharyvixx 👋"
+  description = "Personal blogs on everything about me."
+  homeOneLineBio = "A PhD student in THU AIR, majoring in AIoT. Love writing."
+  github = "https://github.com/Zsbyqx20"
+  linkedin = "https://www.linkedin.com/in/gh-liu-zachary/"
+  email = "gh-liu24@mails.tsinghua.edu.cn"
+  homeAvatar = "avatar.svg"
+  [params.robots]
+    blockAllBots = true
+    blockAIBots = true
+  [params.theme]
+    enableToggle = true
+    default = "auto"
+    storageKey = "zacharite-theme"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+
+  [[menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 20
+
+  [[menus.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 30
+
+  [[menus.main]]
+    name = "Search"
+    pageRef = "/search"
+    weight = 40

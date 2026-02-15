@@ -1,0 +1,3 @@
+[submodule "themes/zacharite"]
+	path = themes/zacharite
+	url = https://github.com/Zsbyqx20/hugo-zacharite.git

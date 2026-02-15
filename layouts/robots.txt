@@ -1,0 +1,27 @@
+{{- $blockAllBots := site.Params.robots.blockAllBots -}}
+{{- $blockAIBots := site.Params.robots.blockAIBots -}}
+User-agent: *
+{{- if $blockAllBots }}
+Disallow: /
+{{- else }}
+Allow: /
+{{- end }}
+
+{{- if and (not $blockAllBots) $blockAIBots }}
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+{{- end }}
+
+Sitemap: {{ "sitemap.xml" | absURL }}
