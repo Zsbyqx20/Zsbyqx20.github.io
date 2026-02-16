@@ -4,6 +4,10 @@ title = "Zacharite"
 theme = "zacharite"
 enableRobotsTXT = true
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+
 [pagination]
   pagerSize = 6
 
@@ -12,7 +16,6 @@ enableRobotsTXT = true
 
 [params]
   author = "Zacharyvixx 👋"
-  description = "Personal blogs on everything about me."
   homeOneLineBio = "A PhD student in THU AIR, majoring in AIoT. Love writing."
   github = "https://github.com/Zsbyqx20"
   linkedin = "https://www.linkedin.com/in/gh-liu-zachary/"
@@ -25,6 +28,10 @@ enableRobotsTXT = true
     enableToggle = true
     default = "auto"
     storageKey = "zacharite-theme"
+
+  [params.codeBlocks]
+    lightStyle = "github"
+    darkStyle = "monokai"
 
 [menus]
   [[menus.main]]
