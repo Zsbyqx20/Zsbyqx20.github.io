@@ -14,9 +14,20 @@ enableRobotsTXT = true
 [taxonomies]
   tag = "tags"
 
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "search-index"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "RSS", "SearchIndex"]
+
 [params]
   author = "Zacharyvixx 👋"
   homeOneLineBio = "A PhD student in THU AIR, majoring in AIoT. Love writing."
+  homeRecentPostsCount = 5
   github = "https://github.com/Zsbyqx20"
   linkedin = "https://www.linkedin.com/in/gh-liu-zachary/"
   email = "gh-liu24@mails.tsinghua.edu.cn"
@@ -31,7 +42,7 @@ enableRobotsTXT = true
 
   [params.codeBlocks]
     lightStyle = "github"
-    darkStyle = "monokai"
+    darkStyle = "onedark"
 
 [menus]
   [[menus.main]]
