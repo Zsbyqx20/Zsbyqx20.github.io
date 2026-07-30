@@ -5,6 +5,7 @@ title = '2025(1): 碎片与幻听'
 tags = ['whisper_from_dreamland']
 showtoc = true
 isCJKLanguage = true
+contentLang = "zh-CN"
 robotsNoIndex = true
 license = "CC BY-NC-ND 4.0"
 +++

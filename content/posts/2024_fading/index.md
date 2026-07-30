@@ -5,6 +5,7 @@ title = '2024: 写给青春的告别诗'
 tags = ['whisper_from_dreamland']
 showtoc = true
 isCJKLanguage = true
+contentLang = "zh-CN"
 robotsNoIndex = true
 license = "CC BY-NC-ND 4.0"
 +++

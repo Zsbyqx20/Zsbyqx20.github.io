@@ -5,6 +5,7 @@ title = '2025(2): 黄昏与兔子洞'
 tags = ['whisper_from_dreamland']
 showtoc = true
 isCJKLanguage = true
+contentLang = "zh-CN"
 robotsNoIndex = true
 license = "CC BY-NC-ND 4.0"
 +++

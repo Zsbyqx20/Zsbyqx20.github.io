@@ -1,5 +1,5 @@
 baseURL = "https://zsbyqx20.github.io/"
-languageCode = "en-us"
+locale = "en-us"
 title = "Zacharite"
 theme = "zacharite"
 enableRobotsTXT = true
@@ -26,6 +26,8 @@ enableRobotsTXT = true
 
 [params]
   author = "Zacharyvixx 👋"
+  # description feeds meta tags; tagline (unset) would show under the site title.
+  description = "A PhD student in THU AIR, majoring in AIoT. Love writing."
   homeOneLineBio = "A PhD student in THU AIR, majoring in AIoT. Love writing."
   homeRecentPostsCount = 5
   github = "https://github.com/Zsbyqx20"

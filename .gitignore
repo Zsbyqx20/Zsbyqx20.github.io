@@ -63,3 +63,6 @@ go.work.sum
 /public/
 /resources/_gen/
 .hugo_build.lock
+
+# Browser automation scratch output
+/.playwright-mcp/
