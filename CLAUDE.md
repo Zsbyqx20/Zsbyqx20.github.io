@@ -10,13 +10,14 @@ Also see `AGENTS.md` for style/PR conventions (2-space indent in TOML/CSS/templa
 hugo server -D                 # dev server, drafts included
 hugo                           # build to public/
 hugo --gc --minify             # production-equivalent build (what CI runs)
+scripts/check-site.sh          # production build + lightweight regression checks
 hugo new content/posts/foo.md  # scaffold from archetypes/default.md
 scripts/svg2ico.sh in.svg out.ico   # regenerate static/favicon.ico (needs ImageMagick)
 ```
 
-There is no test suite. Verification = a clean `hugo --gc --minify`, plus manual checks of home, single post, tag pages, search, and both light/dark themes. Two `languageCode`/`.Language.*` deprecation warnings are pre-existing noise, not regressions.
+There is no full test suite. Verification = a clean `scripts/check-site.sh`, plus manual checks of home, single post, tag pages, search, and both light/dark themes. Two `languageCode`/`.Language.*` deprecation warnings are pre-existing noise, not regressions.
 
-Hugo **extended** is required (min 0.146 per theme, CI pins 0.155.3). `public/` and `.hugo_build.lock` are gitignored build artifacts.
+Hugo **extended** is required (min 0.146 per theme). The project and CI version are pinned in `.hugo-version`. `public/` and `.hugo_build.lock` are gitignored build artifacts.
 
 ## Layout of the repo
 

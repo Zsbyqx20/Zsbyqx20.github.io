@@ -13,6 +13,7 @@ This repository is a Hugo site with a local theme.
 - `hugo server -D`: run local dev server and include drafts.
 - `hugo`: production build to `public/`.
 - `hugo --gc --minify`: optimized build with cleanup + minification.
+- `scripts/check-site.sh`: production build plus lightweight output and draft-preview regression checks.
 - `hugo new content/posts/my-post.md`: scaffold a new post from archetype.
 
 ## Coding Style & Naming Conventions
@@ -22,8 +23,8 @@ This repository is a Hugo site with a local theme.
 - Keep theme changes in `themes/zacharite/` unless intentionally overriding at project root.
 
 ## Testing Guidelines
-There is no automated test suite yet. Use build validation as the baseline:
-- Run `hugo` before opening a PR; fix all build/template errors.
+There is no full automated test suite yet. Use the regression script and manual validation as the baseline:
+- Run `scripts/check-site.sh` before opening a PR; fix all build, output, and draft-preview errors.
 - Run `hugo server -D` and manually verify navigation, post pages, and tag pages.
 - For UI changes, verify both home and single-post layouts.
 
